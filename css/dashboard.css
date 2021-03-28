@@ -1,0 +1,212 @@
+body {
+    display: grid;
+    background-color: #ffffff;
+    color: #000000;
+    grid-template-columns: 13% 37% 13% 20%;
+    grid-template-rows: 10vh 15vh 75vw;
+    grid-row-gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.NavBar {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+}
+
+.Heading {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin: auto;
+  
+    font-family: 'Gilroy-Medium';
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 0.15vw;
+    font-size: 2vw;
+    color: #000000;
+
+    text-shadow: 2px 2px 40px #797979;
+}
+
+.Wallet {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    margin: auto;
+    text-align: center;
+
+    background-color: #000000;
+    border-radius: 1vw;
+    border: 0.25vw solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Gilroy-Light';
+    -webkit-text-stroke-width: 0.1vw;
+    letter-spacing: 1px;
+    font-size: 1.3vw;
+    width: 15vw;
+    padding-top: 1.2vh;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.Address {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.SubAddress {
+    font-family: 'Gilroy-Medium';
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 0.18vw;
+    font-size: 3vw;
+    color: #000000;
+}
+
+.AddressValue {
+    margin-top: 2%;
+    font-family: 'Gilroy-Medium';
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 0.1vw;
+    font-size: 1.5vw;
+    color: #DADADA;
+}
+
+.Balance {
+    grid-row-start: 2;
+    grid-column-start: 4;
+
+    margin-left: 4vw;
+}
+
+.SubBalance {
+    font-family: 'Gilroy-Medium';
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 0.18vw;
+    font-size: 3vw;
+    color: #000000;
+}
+
+.BalanceValue {
+    margin-top: 2%;
+    font-family: 'Gilroy-Medium';
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 0.1vw;
+    font-size: 1.5vw;
+    color: #DADADA;
+}
+
+.NFTs {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    display: inline-flex;
+    margin-left: -18%;
+}
+
+.NFT1, .NFT2, .NFT3 {
+    width: 16vw;
+    height: 38vh;
+    padding: 1vw;
+    margin-left: 1.5vw;
+
+    background-color: #ffffff;
+    box-shadow: 80px 100px 400px #aaaaaa;
+    border-radius: 1vw;
+}
+
+.Preview {
+    width: 16vw;
+    height: 28vh;
+    align-self: center;
+    background-image: url("../assets/images/TestNFT1.jpg");
+    background-size: 100% 100%;
+    background-color: #000000;
+    border-radius: 1vw;
+}
+
+.NFTName {
+    font-family: 'Gilroy-Medium';
+    margin-top: 0.8vw;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 0.1vw;
+    font-size: 1.75vw;
+    color: #000000;
+}
+
+.NFTNo {
+    font-family: 'Gilroy-Medium';
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 0.1vw;
+    font-size: 1.25vw;
+    color: #DADADA;
+}
+
+.Feed {
+    grid-row-start: 3;
+    grid-column-start: 4;
+    width: 23.5vw;
+    height: 65vh;
+    margin-left: 15vh;
+
+    background-color: #ffffff;
+    box-shadow: 80px 100px 400px #aaaaaa;
+    border-radius: 2vw;
+    padding-left: 2.5vw;
+}
+
+.LatestTxns {
+    font-family: 'Gilroy-Medium';
+    margin-top: 2vw;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 0.15vw;
+    font-size: 2vw;
+    color: #DADADA;
+}
+
+.DataEntry1, .DataEntry2, .DataEntry3, .DataEntry4, .DataEntry5 {
+    margin-top: 1.5vw;
+}
+
+.Name {
+    font-family: 'Gilroy-Medium';
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 0.1vw;
+    font-size: 1.3vw;
+    color: #000000;
+}
+
+.ETHValue {
+    display: flex;
+    margin-top: -1.5vw;
+    margin-left: 15vw;
+    font-family: 'Gilroy-Medium';
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 0.1vw;
+    font-size: 1.3vw;
+    color: #000000;
+}
+
+.Hash {
+    font-family: 'Gilroy-Medium';
+    margin-top: 0.5vw;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 0.05vw;
+    font-size: 1vw;
+    color: #DADADA;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: local('Gilroy-Medium'), url(../assets/fonts/Gilroy-Medium.ttf) format('truetype');
+}
+  
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: local('Gilroy-Light'), url(../assets/fonts/Gilroy-Light.ttf) format('truetype');
+}
