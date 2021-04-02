@@ -1,0 +1,106 @@
+{
+    "assets": [
+        {
+            "id": 21061857,
+            "token_id": "9084604063523283648198231509212697612935306038939467670468029873353698312193",
+            "num_sales": 0,
+            "background_color": null,
+            "image_url": "https://lh3.googleusercontent.com/fEIqJOEHjbVCOJxFBpWrYNpKr_7KhQDhgcrloB2gbi1t4KEbfXxhy688dn0ZWyFJPXFxxuecdGKbN2UBYTXbQfiJYVhSLLFCm193NA",
+            "image_preview_url": "https://lh3.googleusercontent.com/fEIqJOEHjbVCOJxFBpWrYNpKr_7KhQDhgcrloB2gbi1t4KEbfXxhy688dn0ZWyFJPXFxxuecdGKbN2UBYTXbQfiJYVhSLLFCm193NA=s250",
+            "image_thumbnail_url": "https://lh3.googleusercontent.com/fEIqJOEHjbVCOJxFBpWrYNpKr_7KhQDhgcrloB2gbi1t4KEbfXxhy688dn0ZWyFJPXFxxuecdGKbN2UBYTXbQfiJYVhSLLFCm193NA=s128",
+            "image_original_url": null,
+            "animation_url": null,
+            "animation_original_url": null,
+            "name": "sketchbook 21",
+            "description": "sketchbook",
+            "external_link": null,
+            "asset_contract": {
+                "address": "0x495f947276749ce646f68ac8c248420045cb7b5e",
+                "asset_contract_type": "semi-fungible",
+                "created_date": "2020-12-02T17:40:53.232025",
+                "name": "OpenSea Collection",
+                "nft_version": null,
+                "opensea_version": "2.0.0",
+                "owner": 102384,
+                "schema_name": "ERC1155",
+                "symbol": "OPENSTORE",
+                "total_supply": null,
+                "description": null,
+                "external_link": null,
+                "image_url": null,
+                "default_to_fiat": false,
+                "dev_buyer_fee_basis_points": 0,
+                "dev_seller_fee_basis_points": 0,
+                "only_proxied_transfers": false,
+                "opensea_buyer_fee_basis_points": 0,
+                "opensea_seller_fee_basis_points": 250,
+                "buyer_fee_basis_points": 0,
+                "seller_fee_basis_points": 250,
+                "payout_address": null
+            },
+            "owner": {
+                "user": {
+                    "username": "NullAddress"
+                },
+                "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/1.png",
+                "address": "0x0000000000000000000000000000000000000000",
+                "config": "",
+                "discord_id": ""
+            },
+            "permalink": "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/9084604063523283648198231509212697612935306038939467670468029873353698312193",
+            "collection": {
+                "banner_image_url": null,
+                "chat_url": null,
+                "created_date": "2021-04-02T06:14:35.217563",
+                "default_to_fiat": false,
+                "description": "sketchbook",
+                "dev_buyer_fee_basis_points": "0",
+                "dev_seller_fee_basis_points": "0",
+                "discord_url": null,
+                "display_data": {
+                    "card_display_style": "contain",
+                    "images": []
+                },
+                "external_url": null,
+                "featured": false,
+                "featured_image_url": null,
+                "hidden": true,
+                "safelist_request_status": "not_requested",
+                "image_url": "https://lh3.googleusercontent.com/fEIqJOEHjbVCOJxFBpWrYNpKr_7KhQDhgcrloB2gbi1t4KEbfXxhy688dn0ZWyFJPXFxxuecdGKbN2UBYTXbQfiJYVhSLLFCm193NA=s120",
+                "is_subject_to_whitelist": false,
+                "large_image_url": null,
+                "medium_username": null,
+                "name": "sketchbook 21",
+                "only_proxied_transfers": false,
+                "opensea_buyer_fee_basis_points": "0",
+                "opensea_seller_fee_basis_points": "250",
+                "payout_address": null,
+                "require_email": false,
+                "short_description": null,
+                "slug": "sketchbook-21",
+                "telegram_url": null,
+                "twitter_username": null,
+                "instagram_username": null,
+                "wiki_url": null
+            },
+            "decimals": null,
+            "sell_orders": [],
+            "creator": {
+                "user": {
+                    "username": "massay"
+                },
+                "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/4.png",
+                "address": "0x1415b424b09710676c1990984361d2628c7cee81",
+                "config": "",
+                "discord_id": ""
+            },
+            "traits": [],
+            "last_sale": null,
+            "top_bid": null,
+            "listing_date": null,
+            "is_presale": true,
+            "transfer_fee_payment_token": null,
+            "transfer_fee": null
+        }
+    ]
+}
