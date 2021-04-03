@@ -86,6 +86,15 @@ a {
     -webkit-text-stroke-width: 0.1vw;
 }
 
+.ShowOff {
+    grid-row-start: 2;
+    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 6;
+
+    background-color: #000000;
+}
+
 form {
     display: grid;
     width: 10vw;
