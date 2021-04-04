@@ -17,7 +17,7 @@ def OpenSeaFetchingSchema(token_id_of_nft, asset_contract_address_of_nft):
         writer.replace("False", '"False"')
         f.write(writer)
 
-    print(response.json()['assets'][0]['permalink'])
+    print( response.json()['assets'][0]['name'], response.json()['assets'][0]['description'], response.json()['assets'][0]['asset_contract']['schema_name'], response.json()['assets'][0]['permalink'], response.json()['assets'][0]['collection']['twitter_username'] )
 
 
 OpenSeaFetchingSchema("40930059826298205183487168041223830856677554863973398691462482759410010554369", "0x495f947276749ce646f68ac8c248420045cb7b5e")

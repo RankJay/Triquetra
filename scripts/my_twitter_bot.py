@@ -3,6 +3,7 @@ import time
 import os
 import csv 
 import random
+import popen
 
 from keys import *
 
@@ -14,7 +15,6 @@ api = tweepy.API(auth)
 # Change the Owner Name here in order to get admin access and privileges
 OWNER_NAME = "RankJay1"
 # =====================================================================
-
 
 
 # NFT Tweet Generation
@@ -59,6 +59,12 @@ def replyToTweets():
         storeLastSeenId(lastSeenId, FILE_NAME)
 
 
+# NFT DM Reply
+
+def NFTDMReply(receiver):
+    if 'Hi' in mention.full_text.lower():
+        message = ''
+        api.send_direct_message(receiver, message)
 
 
 # Script Runner
