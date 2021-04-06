@@ -3,6 +3,7 @@ import time
 import os
 import csv 
 import random
+import OpenSeaFetcher
 
 from keys import *
 import retweetersScript
@@ -21,6 +22,7 @@ OWNER_NAME = "RankJay1"
 
 def NFTTweet(userName, platform, NFTLink):
     if platform.lower()=="opensea":
+        OpenSeaFetcher.OpenSeaFetchingSchema()
         linkToNFT = "" + str(NFTLink)
     elif platform.lower()=="rarible":
         linkToNFT = "" + str(NFTLink)
@@ -86,7 +88,7 @@ def storeLastSeenId(lastSeenId, file_name):
     return
 
 def replyToTweets():
-    print('Cleopatra is up and running...', flush=True)
+    print('Triquetra is up and running...', flush=True)
 
     lastSeenId = retrieveLastSeenId(FILE_NAME)
 
@@ -99,10 +101,9 @@ def replyToTweets():
             print('found Giveaway Thread!', flush=True)
             if mention.user.screen_name==OWNER_NAME:
                 print('connecting to the giveaway thread...', flush=True)
-                subprocess.Popen("python ../contracts/chainlink/scripts/vrf_scripts/deploy_vrf.py", shell=True)
-                subprocess.Popen("python ../contracts/chainlink/scripts/vrf_scripts/fund_vrf.py", shell=True)
-                subprocess.Popen("python ../contracts/chainlink/scripts/vrf_scripts/read_random_number.py", shell=True)
-                subprocess.Popen("python ../contracts/chainlink/scripts/vrf_scripts/request_randomness.py", shell=True)
+                
+                # ADD ACTIVATOR PYTHON SCRIPT
+                
                 tweet = mention.full_text.lower()
                 subHash = '#'
                 giveawayLimit = '!'
@@ -131,10 +132,10 @@ def replyToTweets():
 
 # NFT DM Reply
 
-def NFTDMReply(receiver):
+def NFTDMReply(receiverID, receiverName):
     if 'Hi' in mention.full_text.lower():
-        message = ''
-        api.send_direct_message(receiver, message)
+        message = 'Hey' + receiverName + ',\ncheck this NFT out. It is one of the latest most liked NFT present on top NFT marketplaces.\n' + 'Check it out on:'
+        api.send_direct_message(receiverID, message)
 
 
 # Script Runner
