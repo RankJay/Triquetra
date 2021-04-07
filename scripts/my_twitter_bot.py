@@ -4,6 +4,7 @@ import os
 import csv 
 import random
 import OpenSeaFetcher
+import RaribleFetcher
 
 from keys import *
 import retweetersScript
@@ -20,16 +21,22 @@ OWNER_NAME = "RankJay1"
 
 # NFT Tweet Generation
 
-def NFTTweet(userName, platform, NFTLink):
+def NFTTweet(trade):
+    token_id_of_nft_parser = '#'
+    asset_contract_address_of_nft_parser = '!'
+    keywords = [str(x) for x in trade.split(" ")]
+    token_id_of_nft = [tweet for tweet in keywords if token_id_of_nft_parser in trade]
+    asset_contract_address_of_nft = [tweet for tweet in keywords if asset_contract_address_of_nft_parser in trade]
     if platform.lower()=="opensea":
-        OpenSeaFetcher.OpenSeaFetchingSchema()
+        NFTLink = OpenSeaFetcher.OpenSeaFetchingSchema(token_id_of_nft[0][1:], asset_contract_address_of_nft)
         linkToNFT = "" + str(NFTLink)
     elif platform.lower()=="rarible":
+        NFTLink = RaribleFetcher.RaribleFetchingSchema()
         linkToNFT = "" + str(NFTLink)
     
     message = "Hello Fam!\nWe have minted yet another NFT by @" + str(userName) + ". Go check it out at " + str(platform.title()) + " with this link\n" + str(linkToNFT) 
-    api.update_status(message)
-    # pass
+    
+    return message
 
 
 
@@ -97,7 +104,10 @@ def replyToTweets():
         print(str(mention.id) + ' - ' + mention.full_text, flush=True)
         lastSeenId = mention.id
         storeLastSeenId(lastSeenId, FILE_NAME)
-        if (('giveaway' or '#giveaway') or ('chainlink' and ('giveaway' or '#giveaway'))) in mention.full_text.lower():
+        if 'publicize' in mention.full_text.lower():
+            msg = NFTTweet(mention.full_text.lower())
+            api.update_status(msg, mention.id)
+        elif (('giveaway' or '#giveaway') or ('chainlink' and ('giveaway' or '#giveaway'))) in mention.full_text.lower():
             print('found Giveaway Thread!', flush=True)
             if mention.user.screen_name==OWNER_NAME:
                 print('connecting to the giveaway thread...', flush=True)
