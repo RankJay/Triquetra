@@ -27,10 +27,10 @@ def NFTTweet(trade):
     keywords = [str(x) for x in trade.split(" ")]
     token_id_of_nft = [tweet for tweet in keywords if token_id_of_nft_parser in trade]
     asset_contract_address_of_nft = [tweet for tweet in keywords if asset_contract_address_of_nft_parser in trade]
-    if platform.lower()=="opensea":
+    if "opensea" in keywords.lower():
         NFTLink = OpenSeaFetcher.OpenSeaFetchingSchema(token_id_of_nft[0][1:], asset_contract_address_of_nft)
         linkToNFT = "" + str(NFTLink)
-    elif platform.lower()=="rarible":
+    elif "rarible" in keywords.lower():
         NFTLink = RaribleFetcher.RaribleFetchingSchema()
         linkToNFT = "" + str(NFTLink)
     

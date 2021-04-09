@@ -2,23 +2,28 @@ import requests
 import io
 
 
-def RaribleFetchingSchema():
-    url = "http://api.rarible.com/protocol/ethereum/nft/indexer/v1/items/:0x60f80121c31a0d46b5279700f9df786054aa5ee5:21/meta"
+def RaribleFetchingSchema(itemId):
+    urlMeta = "http://api.rarible.com/protocol/v0.1/ethereum/nft/items/" + itemId + "/meta"
+    urlInfo = "http://api.rarible.com/protocol/v0.1/ethereum/nft/items/" + itemId
 
-    queryString = {"@type": "by_creator", "creator": "0x5ec5957f4178cabb90865ee5564958cd5120d59c"}
+    queryString = {"itemId": itemId}
 
-    response = requests.request("GET", url)
-    print(response.status_code)
+    response = requests.request("GET", urlMeta, params=queryString)
+    creatorResponse =  requests.request("GET", urlInfo, params=queryString)
     fname = "./scripts/RaribleOutput.json"
 
     with io.open(fname, "w", encoding="utf-8") as f:
-        writer = response.text
-        writer.replace("'", '"')
-        writer.replace("True", '"True"')
-        writer.replace("False", '"False"')
+        writer = creatorResponse.text
         f.write(writer)
+        f.close()
 
-    print(response)
+    imageUrl = response.json()['properties']['image']
+    creator = creatorResponse.json()['creator']
+    currentOwner = creatorResponse.json()['owners'][0]
+    if "ipfs://" in response.json()['properties']['image']:
+        imageUrl = response.json()['properties']['image'].replace("ipfs://", "https://ipfs.io/")
+
+    print(imageUrl)
 
 
-RaribleFetchingSchema()
+# RaribleFetchingSchema("0xd07dc4262bcdbf85190c01c996b4c06a461d2430:0x000000000000000000000000000000000000000000000000000000000006fcc8")
