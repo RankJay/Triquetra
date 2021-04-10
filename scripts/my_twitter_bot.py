@@ -28,13 +28,16 @@ def NFTTweet(trade):
     token_id_of_nft = [tweet for tweet in keywords if token_id_of_nft_parser in trade]
     asset_contract_address_of_nft = [tweet for tweet in keywords if asset_contract_address_of_nft_parser in trade]
     if "opensea" in keywords.lower():
-        NFTLink = OpenSeaFetcher.OpenSeaFetchingSchema(token_id_of_nft[0][1:], asset_contract_address_of_nft)
+        platform = 'opensea'
+        nftName, NFTLink = OpenSeaFetcher.OpenSeaFetchingSchema(token_id_of_nft[0][1:], asset_contract_address_of_nft)
         linkToNFT = "" + str(NFTLink)
+        message = "Hello Fam!\nWe have minted yet another NFT named @" + str(nftName) + ". Go check it out at " + str(platform.title()) + " with this link\n" + str(linkToNFT) 
+
     elif "rarible" in keywords.lower():
+        platform = 'rarible'
         NFTLink = RaribleFetcher.RaribleFetchingSchema()
         linkToNFT = "" + str(NFTLink)
-    
-    message = "Hello Fam!\nWe have minted yet another NFT by @" + str(userName) + ". Go check it out at " + str(platform.title()) + " with this link\n" + str(linkToNFT) 
+        message = "Hello Fam!\nWe have minted yet another NFT. Go check it out at " + str(platform.title()) + " with this link\n" + str(linkToNFT) 
     
     return message
 
