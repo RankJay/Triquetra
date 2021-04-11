@@ -3,6 +3,7 @@ import io
 
 
 def OpenSeaFetchingSchema(token_id_of_nft, asset_contract_address_of_nft):
+    print(token_id_of_nft, asset_contract_address_of_nft)
     url = "https://api.opensea.io/api/v1/assets"
 
     queryString = {"token_ids":token_id_of_nft, "asset_contract_address":asset_contract_address_of_nft, "limit":"1"}
@@ -18,7 +19,7 @@ def OpenSeaFetchingSchema(token_id_of_nft, asset_contract_address_of_nft):
         f.write(writer)
         f.close()
 
-    print( response.json()['assets'][0]['name'], response.json()['assets'][0]['description'], response.json()['assets'][0]['asset_contract']['schema_name'], response.json()['assets'][0]['permalink'], response.json()['assets'][0]['collection']['twitter_username'] )
+    # print( response.json()['assets'][0]['name'], response.json()['assets'][0]['description'], response.json()['assets'][0]['asset_contract']['schema_name'], response.json()['assets'][0]['permalink'], response.json()['assets'][0]['collection']['twitter_username'] )
 
     return response.json()['assets'][0]['name'], response.json()['assets'][0]['permalink']
 

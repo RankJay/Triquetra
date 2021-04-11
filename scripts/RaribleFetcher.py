@@ -23,7 +23,9 @@ def RaribleFetchingSchema(itemId):
     if "ipfs://" in response.json()['properties']['image']:
         imageUrl = response.json()['properties']['image'].replace("ipfs://", "https://ipfs.io/")
 
-    print(imageUrl)
+    # print(imageUrl)
+
+    return imageUrl
 
 
 # RaribleFetchingSchema("0xd07dc4262bcdbf85190c01c996b4c06a461d2430:0x000000000000000000000000000000000000000000000000000000000006fcc8")

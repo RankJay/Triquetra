@@ -25,17 +25,17 @@ def NFTTweet(trade):
     token_id_of_nft_parser = '#'
     asset_contract_address_of_nft_parser = '!'
     keywords = [str(x) for x in trade.split(" ")]
-    token_id_of_nft = [tweet for tweet in keywords if token_id_of_nft_parser in trade]
-    asset_contract_address_of_nft = [tweet for tweet in keywords if asset_contract_address_of_nft_parser in trade]
-    if "opensea" in keywords.lower():
+    token_id_of_nft = [tweet for tweet in keywords if token_id_of_nft_parser==tweet[0]]
+    asset_contract_address_of_nft = [tweet for tweet in keywords if asset_contract_address_of_nft_parser==tweet[0]]
+    if "opensea" in keywords:
         platform = 'opensea'
-        nftName, NFTLink = OpenSeaFetcher.OpenSeaFetchingSchema(token_id_of_nft[0][1:], asset_contract_address_of_nft)
+        nftName, NFTLink = OpenSeaFetcher.OpenSeaFetchingSchema(token_id_of_nft[0][1:], asset_contract_address_of_nft[0][1:])
         linkToNFT = "" + str(NFTLink)
         message = "Hello Fam!\nWe have minted yet another NFT named @" + str(nftName) + ". Go check it out at " + str(platform.title()) + " with this link\n" + str(linkToNFT) 
 
-    elif "rarible" in keywords.lower():
+    elif "rarible" in keywords:
         platform = 'rarible'
-        NFTLink = RaribleFetcher.RaribleFetchingSchema()
+        NFTLink = RaribleFetcher.RaribleFetchingSchema(token_id_of_nft[0][1:])
         linkToNFT = "" + str(NFTLink)
         message = "Hello Fam!\nWe have minted yet another NFT. Go check it out at " + str(platform.title()) + " with this link\n" + str(linkToNFT) 
     
@@ -83,7 +83,7 @@ def ProcessingRandomness(Tweet_ID):
 
 # NFT Tweet Reply
 
-FILE_NAME = 'LastSeenId.txt'
+FILE_NAME = './scripts/LastSeenId.txt'
 
 def retrieveLastSeenId(file_name):
     f_read = open(file_name, 'r')
@@ -152,3 +152,7 @@ def NFTDMReply(receiverID, receiverName):
 
 
 # Script Runner
+while True:
+    replyToTweets()
+    n = random.randint(1, 10)
+    time.sleep(n)
