@@ -1,1 +1,154 @@
-{"assets":[{"id":21060624,"token_id":"40930059826298205183487168041223830856677554863973398691462482759410010554369","num_sales":0,"background_color":null,"image_url":"https://lh3.googleusercontent.com/A1bbRc3J0LsonciZcvKgzP43HU-flnO5bXZU5BONmiXcJ44e8d873hDA1xKUdKscQfaLDLT3HNRpRGJsor6N9D-jgtmj56yc-gBl6Q","image_preview_url":"https://lh3.googleusercontent.com/A1bbRc3J0LsonciZcvKgzP43HU-flnO5bXZU5BONmiXcJ44e8d873hDA1xKUdKscQfaLDLT3HNRpRGJsor6N9D-jgtmj56yc-gBl6Q=s250","image_thumbnail_url":"https://lh3.googleusercontent.com/A1bbRc3J0LsonciZcvKgzP43HU-flnO5bXZU5BONmiXcJ44e8d873hDA1xKUdKscQfaLDLT3HNRpRGJsor6N9D-jgtmj56yc-gBl6Q=s128","image_original_url":null,"animation_url":null,"animation_original_url":null,"name":"CryptoHunter #426","description":null,"external_link":null,"asset_contract":{"address":"0x495f947276749ce646f68ac8c248420045cb7b5e","asset_contract_type":"semi-fungible","created_date":"2020-12-02T17:40:53.232025","name":"OpenSea Collection","nft_version":null,"opensea_version":"2.0.0","owner":102384,"schema_name":"ERC1155","symbol":"OPENSTORE","total_supply":null,"description":null,"external_link":null,"image_url":null,"default_to_fiat":false,"dev_buyer_fee_basis_points":0,"dev_seller_fee_basis_points":0,"only_proxied_transfers":false,"opensea_buyer_fee_basis_points":0,"opensea_seller_fee_basis_points":250,"buyer_fee_basis_points":0,"seller_fee_basis_points":250,"payout_address":null},"owner":{"user":{"username":"NullAddress"},"profile_img_url":"https://storage.googleapis.com/opensea-static/opensea-profile/1.png","address":"0x0000000000000000000000000000000000000000","config":"","discord_id":""},"permalink":"https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/40930059826298205183487168041223830856677554863973398691462482759410010554369","collection":{"banner_image_url":"https://lh3.googleusercontent.com/FWe_dS0jgTdkCkFuqRAFtU0Dm0TBI-_S3PWpuxAEUlCqFnoJ2kmc-se2wCSDVZFinN-ZkeJTnmvB9fEHnFu05PmOkIRY3FLv7_0o=s2500","chat_url":null,"created_date":"2021-04-02T04:09:47.442638","default_to_fiat":false,"description":"Welcome to the world of CryptoHunterz!\n\nThe first and only collection of CryptoHunterz generated the futuristic way: using a fast and compact algorithm to create 5,000 unique characters.\n\nThey will be selling at a very low price to let new NFT collectors start their journey.\n\nGrab your favorite before is too late!","dev_buyer_fee_basis_points":"0","dev_seller_fee_basis_points":"300","discord_url":null,"display_data":{"card_display_style":"contain"},"external_url":null,"featured":false,"featured_image_url":"https://lh3.googleusercontent.com/iJovHTdhGWwizG9DqMNSzTMOsbCK56vxXuwU_4_8A8DAzlaNXFCAVx37f3qy2YtYD_64M9IAAtOrGIwBWX5Nq1PjkZb9AJgOYwH1Uw=s300","hidden":true,"safelist_request_status":"not_requested","image_url":"https://lh3.googleusercontent.com/3G3MCFAwMgt8vgT7S2mHUBpddyW2cayTDVedbvo5Yb_FqgdelApA3-yXgoNUfojSaSubDn1pKj2boCNba5BSCOPg8O_viv7hY1pf1g=s120","is_subject_to_whitelist":false,"large_image_url":"https://lh3.googleusercontent.com/iJovHTdhGWwizG9DqMNSzTMOsbCK56vxXuwU_4_8A8DAzlaNXFCAVx37f3qy2YtYD_64M9IAAtOrGIwBWX5Nq1PjkZb9AJgOYwH1Uw=s300","medium_username":null,"name":"Test - 9jHLki9SVX","only_proxied_transfers":false,"opensea_buyer_fee_basis_points":"0","opensea_seller_fee_basis_points":"250","payout_address":"0xbd268feefb5a46184f83769806baabff450a7859","require_email":false,"short_description":null,"slug":"test-9jhlki9svx","telegram_url":null,"twitter_username":"CryptoHunterz1","instagram_username":null,"wiki_url":null},"decimals":null,"sell_orders":[],"creator":{"user":{"username":"CryptoHunterz"},"profile_img_url":"https://storage.googleapis.com/opensea-static/opensea-profile/26.png","address":"0x5a7d97c88e9dbbe1748fb24d5fb7875745d7a152","config":"","discord_id":""},"traits":[{"trait_type":"Skin","value":"Light Brown","display_type":null,"max_value":null,"trait_count":1296,"order":null},{"trait_type":"Mouth","value":"Serious 1","display_type":null,"max_value":null,"trait_count":822,"order":null},{"trait_type":"Upper body","value":"Purple sleeveless","display_type":null,"max_value":null,"trait_count":405,"order":null},{"trait_type":"Eyes","value":"Green","display_type":null,"max_value":null,"trait_count":415,"order":null},{"trait_type":"Lower body","value":"Purple shorts","display_type":null,"max_value":null,"trait_count":359,"order":null},{"trait_type":"Head","value":"Short black","display_type":null,"max_value":null,"trait_count":442,"order":null}],"last_sale":null,"top_bid":null,"listing_date":null,"is_presale":true,"transfer_fee_payment_token":null,"transfer_fee":null}]}
+{
+    "assets": [
+        {
+            "id": 21060624,
+            "token_id": "40930059826298205183487168041223830856677554863973398691462482759410010554369",
+            "num_sales": 0,
+            "background_color": null,
+            "image_url": "https://lh3.googleusercontent.com/A1bbRc3J0LsonciZcvKgzP43HU-flnO5bXZU5BONmiXcJ44e8d873hDA1xKUdKscQfaLDLT3HNRpRGJsor6N9D-jgtmj56yc-gBl6Q",
+            "image_preview_url": "https://lh3.googleusercontent.com/A1bbRc3J0LsonciZcvKgzP43HU-flnO5bXZU5BONmiXcJ44e8d873hDA1xKUdKscQfaLDLT3HNRpRGJsor6N9D-jgtmj56yc-gBl6Q=s250",
+            "image_thumbnail_url": "https://lh3.googleusercontent.com/A1bbRc3J0LsonciZcvKgzP43HU-flnO5bXZU5BONmiXcJ44e8d873hDA1xKUdKscQfaLDLT3HNRpRGJsor6N9D-jgtmj56yc-gBl6Q=s128",
+            "image_original_url": null,
+            "animation_url": null,
+            "animation_original_url": null,
+            "name": "CryptoHunter #426",
+            "description": null,
+            "external_link": null,
+            "asset_contract": {
+                "address": "0x495f947276749ce646f68ac8c248420045cb7b5e",
+                "asset_contract_type": "semi-fungible",
+                "created_date": "2020-12-02T17:40:53.232025",
+                "name": "OpenSea Collection",
+                "nft_version": null,
+                "opensea_version": "2.0.0",
+                "owner": 102384,
+                "schema_name": "ERC1155",
+                "symbol": "OPENSTORE",
+                "total_supply": null,
+                "description": null,
+                "external_link": null,
+                "image_url": null,
+                "default_to_fiat": false,
+                "dev_buyer_fee_basis_points": 0,
+                "dev_seller_fee_basis_points": 0,
+                "only_proxied_transfers": false,
+                "opensea_buyer_fee_basis_points": 0,
+                "opensea_seller_fee_basis_points": 250,
+                "buyer_fee_basis_points": 0,
+                "seller_fee_basis_points": 250,
+                "payout_address": null
+            },
+            "owner": {
+                "user": {
+                    "username": "NullAddress"
+                },
+                "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/1.png",
+                "address": "0x0000000000000000000000000000000000000000",
+                "config": "",
+                "discord_id": ""
+            },
+            "permalink": "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/40930059826298205183487168041223830856677554863973398691462482759410010554369",
+            "collection": {
+                "banner_image_url": "https://lh3.googleusercontent.com/FWe_dS0jgTdkCkFuqRAFtU0Dm0TBI-_S3PWpuxAEUlCqFnoJ2kmc-se2wCSDVZFinN-ZkeJTnmvB9fEHnFu05PmOkIRY3FLv7_0o=s2500",
+                "chat_url": null,
+                "created_date": "2021-04-02T04:09:47.442638",
+                "default_to_fiat": false,
+                "description": "Welcome to the world of CryptoHunterz!\n\nThe first and only collection of CryptoHunterz generated the futuristic way: using a fast and compact algorithm to create 5,000 unique characters.\n\nThey will be selling at a very low price to let new NFT collectors start their journey.\n\nGrab your favorite before is too late!",
+                "dev_buyer_fee_basis_points": "0",
+                "dev_seller_fee_basis_points": "300",
+                "discord_url": null,
+                "display_data": {
+                    "card_display_style": "contain"
+                },
+                "external_url": null,
+                "featured": false,
+                "featured_image_url": "https://lh3.googleusercontent.com/iJovHTdhGWwizG9DqMNSzTMOsbCK56vxXuwU_4_8A8DAzlaNXFCAVx37f3qy2YtYD_64M9IAAtOrGIwBWX5Nq1PjkZb9AJgOYwH1Uw=s300",
+                "hidden": true,
+                "safelist_request_status": "not_requested",
+                "image_url": "https://lh3.googleusercontent.com/3G3MCFAwMgt8vgT7S2mHUBpddyW2cayTDVedbvo5Yb_FqgdelApA3-yXgoNUfojSaSubDn1pKj2boCNba5BSCOPg8O_viv7hY1pf1g=s120",
+                "is_subject_to_whitelist": false,
+                "large_image_url": "https://lh3.googleusercontent.com/iJovHTdhGWwizG9DqMNSzTMOsbCK56vxXuwU_4_8A8DAzlaNXFCAVx37f3qy2YtYD_64M9IAAtOrGIwBWX5Nq1PjkZb9AJgOYwH1Uw=s300",
+                "medium_username": null,
+                "name": "Test - 9jHLki9SVX",
+                "only_proxied_transfers": false,
+                "opensea_buyer_fee_basis_points": "0",
+                "opensea_seller_fee_basis_points": "250",
+                "payout_address": "0xbd268feefb5a46184f83769806baabff450a7859",
+                "require_email": false,
+                "short_description": null,
+                "slug": "test-9jhlki9svx",
+                "telegram_url": null,
+                "twitter_username": "CryptoHunterz1",
+                "instagram_username": null,
+                "wiki_url": null
+            },
+            "decimals": null,
+            "sell_orders": [],
+            "creator": {
+                "user": {
+                    "username": "CryptoHunterz"
+                },
+                "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/26.png",
+                "address": "0x5a7d97c88e9dbbe1748fb24d5fb7875745d7a152",
+                "config": "",
+                "discord_id": ""
+            },
+            "traits": [
+                {
+                    "trait_type": "Skin",
+                    "value": "Light Brown",
+                    "display_type": null,
+                    "max_value": null,
+                    "trait_count": 1296,
+                    "order": null
+                },
+                {
+                    "trait_type": "Mouth",
+                    "value": "Serious 1",
+                    "display_type": null,
+                    "max_value": null,
+                    "trait_count": 822,
+                    "order": null
+                },
+                {
+                    "trait_type": "Upper body",
+                    "value": "Purple sleeveless",
+                    "display_type": null,
+                    "max_value": null,
+                    "trait_count": 405,
+                    "order": null
+                },
+                {
+                    "trait_type": "Eyes",
+                    "value": "Green",
+                    "display_type": null,
+                    "max_value": null,
+                    "trait_count": 415,
+                    "order": null
+                },
+                {
+                    "trait_type": "Lower body",
+                    "value": "Purple shorts",
+                    "display_type": null,
+                    "max_value": null,
+                    "trait_count": 359,
+                    "order": null
+                },
+                {
+                    "trait_type": "Head",
+                    "value": "Short black",
+                    "display_type": null,
+                    "max_value": null,
+                    "trait_count": 442,
+                    "order": null
+                }
+            ],
+            "last_sale": null,
+            "top_bid": null,
+            "listing_date": null,
+            "is_presale": true,
+            "transfer_fee_payment_token": null,
+            "transfer_fee": null
+        }
+    ]
+}

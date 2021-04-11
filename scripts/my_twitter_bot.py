@@ -1,5 +1,6 @@
 import tweepy
 import time
+import subprocess
 import os
 import csv 
 import random
@@ -15,7 +16,8 @@ auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
 # Change the Owner Name here in order to get admin access and privileges
-OWNER_NAME = "RankJay1"
+OWNER_NAME = "triquet77786036"
+GIVEAWAY_DATABASE = []
 # =====================================================================
 
 
@@ -42,7 +44,17 @@ def NFTTweet(trade):
     return message
 
 
+# NFT BROWNIE SCRIPTS DEPLOYMENT
 
+def Activator():
+    subprocess.Popen("pushd ./contracts/chainlink/scripts", shell=True)
+    subprocess.Popen("brownie run ./vrf_scripts/deploy_vrf.py  --network kovan", shell=True)
+    time.sleep(100)
+    subprocess.Popen("brownie run ./vrf_scripts/fund_vrf.py  --network kovan", shell=True)
+    time.sleep(100)
+    subprocess.Popen("brownie run  ./vrf_scripts/request_randomness.py  --network kovan", shell=True)
+    time.sleep(100)
+    subprocess.Popen("brownie run  ./vrf_scripts/read_random_number.py  --network kovan", shell=True)
 
 # NFT Giving Random Giveaway
 
@@ -60,7 +72,7 @@ def import_csv(csvfilename):
 
 def ProcessingRandomness(Tweet_ID):
     Limit = getWinners.returnLimit()
-    cumulativeRandomness = import_csv('./contracts/chainlink/scripts/RandomnessSheet.csv')
+    cumulativeRandomness = import_csv('RandomnessSheet.csv')
     latestRandomness = cumulativeRandomness[-1]
     ranD = int(latestRandomness[0])
     ranDcopy = int(ranD)
@@ -83,7 +95,7 @@ def ProcessingRandomness(Tweet_ID):
 
 # NFT Tweet Reply
 
-FILE_NAME = './scripts/LastSeenId.txt'
+FILE_NAME = '../../../scripts/LastSeenId.txt'
 
 def retrieveLastSeenId(file_name):
     f_read = open(file_name, 'r')
@@ -116,6 +128,7 @@ def replyToTweets():
                 print('connecting to the giveaway thread...', flush=True)
                 
                 # ADD ACTIVATOR PYTHON SCRIPT
+                # Activator()
                 
                 tweet = mention.full_text.lower()
                 subHash = '#'
@@ -124,14 +137,14 @@ def replyToTweets():
                 thread = [tweet for tweet in keywords if subHash in tweet]
                 Alert = [tweet for tweet in keywords if giveawayLimit in tweet]
                 retweetersScript.retweetersScraping(thread[0][1:])
-                Validators, Identity, Template = getWinners.randomGiveaway(thread[0][1:], OWNER_NAME, int(Alert[0][1:]))
+                Validators, Identity, Template = getWinners.randomGiveaway(thread[0][1:], OWNER_NAME)
 
                 winners_indx = ProcessingRandomness(int(mention.id))
                 GIVEAWAY_DATABASE.append(thread[0][1:])
                 lis = ''
                 for i in range(0, len(winners_indx)):
-                    lis += str(Validators[int(winners_indx[i])]) + ', '
-                    # api.send_direct_message(Identity[i], Template.format(name=Validators[int(winners_indx[i])]))
+                    lis += '@' + str(Validators[int(winners_indx[i])]) + ', '
+                    api.send_direct_message(Identity[i], Template.format(name=Validators[int(winners_indx[i])]))
 
                 api.update_status("Hey @" + mention.user.screen_name + ",\nWinners of today's giveaway are " + lis + ".\nDMs to avail the GPR tokens have been sent to winners.", mention.id)
                 api.create_favorite(mention.id)

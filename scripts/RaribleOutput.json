@@ -1,1 +1,18 @@
-{"id":"0xd07dc4262bcdbf85190c01c996b4c06a461d2430:0x000000000000000000000000000000000000000000000000000000000006fcc8","token":"0xd07dc4262bcdbf85190c01c996b4c06a461d2430","tokenId":"0x000000000000000000000000000000000000000000000000000000000006fcc8","unlockable":false,"creator":"0x0ab3a4f426fed3ccadfc20c0bf3414cab2c42883","supply":5,"lazySupply":0,"owners":["0x0ab3a4f426fed3ccadfc20c0bf3414cab2c42883"],"royalties":[{"recipient":"0x0ab3a4f426fed3ccadfc20c0bf3414cab2c42883","value":1000}]}
+{
+    "id": "0xd07dc4262bcdbf85190c01c996b4c06a461d2430:0x000000000000000000000000000000000000000000000000000000000006fcc8",
+    "token": "0xd07dc4262bcdbf85190c01c996b4c06a461d2430",
+    "tokenId": "0x000000000000000000000000000000000000000000000000000000000006fcc8",
+    "unlockable": false,
+    "creator": "0x0ab3a4f426fed3ccadfc20c0bf3414cab2c42883",
+    "supply": 5,
+    "lazySupply": 0,
+    "owners": [
+        "0x0ab3a4f426fed3ccadfc20c0bf3414cab2c42883"
+    ],
+    "royalties": [
+        {
+            "recipient": "0x0ab3a4f426fed3ccadfc20c0bf3414cab2c42883",
+            "value": 1000
+        }
+    ]
+}

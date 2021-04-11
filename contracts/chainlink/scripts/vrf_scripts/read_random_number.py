@@ -5,7 +5,7 @@ import csv
 STATIC_SEED = 123
 
 def predictionDataWriter(inputFromBot):
-    with open('D:\ChainT2\chainlink\scripts\RandomnessSheet.csv', 'a', newline='') as deepLearningTrainer:
+    with open('RandomnessSheet.csv', 'a', newline='') as deepLearningTrainer:
       trainer = csv.writer(deepLearningTrainer)
       try:
         if len(str(inputFromBot))>1 and float(inputFromBot)==True:
