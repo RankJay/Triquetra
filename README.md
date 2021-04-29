@@ -2,7 +2,7 @@
 
 Your personal NFT Marketing Bot.
 
-Add your token_id and asset_address and get yourself a free tweet to publicisize your NFT on twitter.
+Add your token_id and asset_address and get yourself a free tweet to publicisize your NFT on twitter. This project is made as a part of Ethereum India Fellowshp 2.0
 
 ## Pre Requisites
 
