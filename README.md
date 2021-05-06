@@ -4,6 +4,7 @@ Your personal NFT Marketing Bot.
 
 Add your token_id and asset_address and get yourself a free tweet to publicisize your NFT on twitter. This project is made as a part of Ethereum India Fellowshp 2.0
 
+- Ethereum India Fellowship 2.0
 - ChainLink Hackathon 2021
 
 ## Pre Requisites
